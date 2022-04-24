@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+
+.section-title {
+  margin-bottom: 65px;
+}
+
+/* Header */
+#header {
+  max-width: 960px;
+  height: 270px;
+  margin: 0 auto;
+  padding:0 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  line-height: 1px;
+}
+
+.header-nav_list {
+  display: flex;
+}
+
+.header-nav_item {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+
+.header-nav_item a {
+  color: #24292e;
+}
+
+.insta-icon {
+  width: 20px;
+}
+
+/* mainvisual */
+#mainvisual {
+  margin-bottom: 80px;
+}
+
+#mainvisual img {
+  height: 420px;
+  width: 100%
+  max-width: 1920px;
+  object-fit: cover;
+}
+
+/* About */
+.section-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.about-content_name {
+  margin-bottom: 30px;
+}
+
+.about-content_email {
+  margin-bottom: 30px;
+}
+
+#about p {
+  text-align: justify;
+}
+
+/* Works */
+.works-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.works-content li {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+/* News */
+.news-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-top: 1px solid #c8c8c8;
+}
+
+.news-content dt {
+  width: 20%;
+  padding: 15px;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.news-content dd {
+  width: 80%;
+  padding: 15px;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+/* Contact */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#contact dt {
+  width: 15%;
+}
+
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+#contact dd input {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+
+#contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+  height: 10rem;
+}
+
+.button {
+  text-align: center;
+}
+
+.button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+
+.button input:hover {
+  background-color: #fff;
+  color: #24292e;
+}
+
+/* Footer */
+#footer {
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  background-color: #24292e;
+  text-align: center;
+}
