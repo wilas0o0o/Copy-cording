@@ -25,6 +25,8 @@ img {
 
 .section-title {
   margin-bottom: 65px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* Header */
@@ -44,6 +46,7 @@ img {
 
 .header-nav_list {
   display: flex;
+  padding: 10px 0;
 }
 
 .header-nav_item {
@@ -66,17 +69,12 @@ img {
 
 #mainvisual img {
   height: 420px;
-  width: 100%
+  width: 100%;
   max-width: 1920px;
   object-fit: cover;
 }
 
 /* About */
-.section-title {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
 .about-content_name {
   margin-bottom: 30px;
 }
@@ -175,4 +173,64 @@ img {
   padding: 10px 20px;
   background-color: #24292e;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #header {
+    max-width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .site-logo {
+    margin-top: 20px;
+  }
+
+  .header-nav_item {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+
+  .header-nav_item:first-child {
+    margin-left: 0;
+  }
+
+  .wrapper {
+    margin-bottom: 70px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .works-content {
+    flex-direction: column;
+  }
+
+  .works-content li {
+    width: 100%;
+  }
+
+  .news-content {
+    flex-direction: column;
+  }
+
+  .news-content dt {
+    width: 100%;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .news-content dd {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  #contact dd, #contact dt{
+    width: 100%;
+  }
 }
