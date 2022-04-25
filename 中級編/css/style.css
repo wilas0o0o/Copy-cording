@@ -1,0 +1,140 @@
+/*--------- 共通部分 ----------*/
+html {
+  font-size: 100%;
+}
+body {
+  color: #333;
+  font-size: 0.875rem;
+  min-height: 100vh;
+  position: relative;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+a:hover {
+  opacity: 0.7;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.site-logo a {
+  width: 180px;
+  line-height: 1px;
+  display: block;
+}
+.page-title {
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/*--------- Header ----------*/
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/*--------- Header/nav-menu_close----------*/
+#navi {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  color: #fff;
+  padding: 36px 50px;
+  transition: all 0.5s;
+  z-index: 20;
+  opacity: 0;
+}
+#navi a {
+  color: #fff;
+}
+#navi li {
+  margin-bottom: 14px;
+}
+
+/*--------- Header/nav-menu_open ----------*/
+.open #navi {
+  left: 0;
+  opacity: 1;
+}
+.toggle_btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition:all 0.5s;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/*--------- Header/nav-icon_close ----------*/
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.toggle_btn span:nth-child(1) {
+  top: 10px
+}
+
+.toggle_btn span:nth-child(2) {
+  bottom: 10px;
+}
+
+/*--------- Header/nav-icon_open ----------*/
+.open .toggle_btn span {
+  background-color: #fff;
+}
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+}
+
+.open .toggle_btn span:nth-child(2) {
+  -webkit-transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
+}
+
+
+/*--------- Header/mask ----------*/
+#mask {
+  display :none;
+  transition: all 0,5s;
+}
+
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .8;
+  z-index: 10;
+  cursor: pointer;
+}
