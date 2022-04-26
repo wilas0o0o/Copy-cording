@@ -209,3 +209,31 @@ li {
   line-height: 1.9;
   margin-bottom: 30px;
 }
+
+/*--------- item.html ----------*/
+.item {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.item-img {
+  width: 50%;
+}
+.item-text {
+  width: 42%;
+}
+.item-text p {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.item-text dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-text dt {
+  width: 30%;
+}
+.item-text dd {
+  width: 70%;
+}
