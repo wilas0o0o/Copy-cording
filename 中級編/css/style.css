@@ -265,3 +265,41 @@ li {
   height: 300px;
   border: 0;
 }
+
+@media screen and (max-width: 900px) {
+  /*--------- top ----------*/
+  .product-list li {
+    width: 47%;
+  }
+
+  /*--------- item ----------*/
+  .item {
+    flex-direction: column;
+  }
+  .item-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .item-text {
+    width: 100%;
+  }
+  /*--------- company ----------*/
+  .company-info dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 5px;
+  }
+  .company-info dd {
+    width: 100%;
+    border-bottom: 1px solid #dcdbdb;
+    padding-top: 5px;
+  }
+
+  /*--------- Footer ----------*/
+  #footer {
+    flex-direction: column;
+  }
+  #footer ul {
+    margin-bottom: 5px;
+  }
+}
