@@ -1,0 +1,77 @@
+body {
+  color: #121212;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+a {
+  color: #121212;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+.site-title {
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+}
+.sec-title {
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#main {
+  padding-top: 80px;
+}
+
+/*--------- Header ---------*/
+#header {
+  width: 100%;
+  padding: 20px 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+}
+
+/*--------- Header/toggle_btn ---------*/
+.toggle_btn {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 45px;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 20;
+}
+.toggle_btn span{
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  transition: all 0.5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+
+/*--------- Header/nav ---------*/
+#nav {
+  display: none;
+}
