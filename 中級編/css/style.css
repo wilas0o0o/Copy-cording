@@ -158,3 +158,45 @@ li {
 #footer p {
   font-size: 0.625rem;
 }
+
+/*--------- index.html ----------*/
+#top {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product-list li {
+  width: 23%;
+  margin-bottom: 40px;
+}
+.product-list img {
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+.product-list p {
+  font-size: 0.75rem;
+}
+.text-link {
+  display: block;
+  text-align: center;
+}
+
+/*--------- products.html ----------*/
+.content {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination li {
+  margin: 0 20px;
+}
+.current-page {
+  border-bottom: 1px solid #333;
+}
