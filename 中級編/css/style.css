@@ -237,3 +237,31 @@ li {
 .item-text dd {
   width: 70%;
 }
+
+/*--------- company.html ----------*/
+.company {
+  max-width: 600px;
+}
+.company-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.company-info dt {
+  width: 30%;
+  border-bottom: 1px solid #dcdbdb;
+  padding: 20px 10px;
+}
+.company-info dd {
+  width: 70%;
+  border-bottom: 1px solid #dcdbdb;
+  padding: 20px 10px;
+}
+.map {
+  filter: grayscale(1);
+}
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
