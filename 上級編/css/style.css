@@ -40,7 +40,7 @@ li {
 }
 
 /*--------- Header/toggle_btn ---------*/
-.toggle_btn {
+.toggle-btn {
   width: 30px;
   height: 30px;
   display: block;
@@ -51,7 +51,7 @@ li {
   cursor: pointer;
   z-index: 20;
 }
-.toggle_btn span{
+.toggle-btn span{
   display: block;
   width: 30px;
   height: 2px;
@@ -61,17 +61,28 @@ li {
   left: 0;
   transition: all 0.5s;
 }
-.toggle_btn span:nth-child(1) {
+.toggle-btn span:nth-child(1) {
   top: 4px;
 }
-.toggle_btn span:nth-child(2) {
+.toggle-btn span:nth-child(2) {
   top: 14px;
 }
-.toggle_btn span:nth-child(3) {
+.toggle-btn span:nth-child(3) {
   bottom: 4px;
 }
 
 /*--------- Header/nav ---------*/
-#nav {
+.sp-nav {
   display: none;
+}
+.open .sp-nav {
+  display: block;
+}
+
+
+/*--------- footer ---------*/
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

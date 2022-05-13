@@ -1,13 +1,5 @@
 $(function() {
-  $('.toggle_btn').on('click', function() {
-    if ($('#header').hasClass('open')) {
-      $('#header').removeClass('open');
-    } else {
-      $('#header').addClass('open');
-    };
-  });
-
-  $('#mask').on('click', function() {
-    $('#mask').removeClass('open');
+  $('.toggle-btn').on('click', function() {
+    $('#header').toggleClass('open');
   });
 });
