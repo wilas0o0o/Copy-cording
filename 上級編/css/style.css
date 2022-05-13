@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 li {
   list-style: none;
@@ -19,7 +19,7 @@ li {
 .site-title a {
   display: block;
 }
-.sec-title {
+.sec-heading {
   font-size: 2.25rem;
   margin-bottom: 30px;
   text-align: center;
@@ -31,14 +31,12 @@ li {
 /*--------- Header ---------*/
 #header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background-color: #fff;
-  z-index: 10;
-}
-.header__inner {
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
+  z-index: 10;
 }
 
 
@@ -126,6 +124,26 @@ li {
   opacity: 0.8;
   z-index: 1;
 }
+
+/*--------- video ---------*/
+video {
+  width: 100%;
+}
+
+/*--------- pickup ---------*/
+#pickup {
+  width: 100%;
+  padding: 100px 0 50px;
+}
+.pickup__img-box {
+  position: relative;
+}
+.pickup__img {
+  padding: 0 30px;
+}
+
+
+
 
 
 /*--------- footer ---------*/
