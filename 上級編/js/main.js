@@ -16,7 +16,7 @@ $(function() {
     var target = $(href == '#' || href == "" ? 'html' : href);
     var position = target.offset().top;
     $('html, body').animate({
-      scrollTop:position
+      WWWscrollTop:position
     }, 600, "swing"
     );
     return false;
