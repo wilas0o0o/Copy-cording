@@ -89,16 +89,18 @@ li {
 .sp-nav {
   position: absolute;
   top: 0;
-  left: 0;
-  display: none;
+  left: -300px;
   width: 300px;
   height: 100vh;
   padding: 60px 25px;
   background-color: #121212;
+  transition: all 0.5s;
   z-index: 10;
+  opacity: 0;
 }
 .open .sp-nav {
-  display: block;
+  left: 0;
+  opacity: 1;
 }
 .nav-menu {
   margin-bottom: 60px;
@@ -114,6 +116,9 @@ li {
 .nav-sns .nav-item {
   padding: 5px 0;
 }
+.mask {
+  opacity: 0;
+}
 .open .mask {
   position: fixed;
   top: 0;
@@ -121,8 +126,10 @@ li {
   width: 100%;
   height: 100%;
   background-color: #000;
+  transition: all 0.5s;
   opacity: 0.8;
   z-index: 1;
+  cursor: pointer;
 }
 
 /*--------- video ---------*/
@@ -145,10 +152,56 @@ video {
 
 
 
+/*--------- contact ---------*/
+#contact {
+  background-color: #121212;
+  color: #fff;
+  padding: 50px 0;
+}
+#contact .sec-heading {
+  color: #fff;
+}
+#contact .content {
+  display: flex;
+  justify-content: space-between;
+  width: 1240px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.contact__left,
+.contact__right  {
+  width: 45%;
+}
+.contact__left p {
+  margin-bottom: 30px;
+}
+.contact__right input,
+.contact__right textarea {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.contact__right .button input {
+  width: 200px;
+  color: #fff;
+  background-color: #121212;
+  border: 1px solid #fff;
+  padding: 12px 0;
+  margin-bottom: 0;
+  transition: all 0.3s;
+}
+.contact__right .button input:hover {
+  color: #202020;
+  background-color: #fff;
+}
+
 
 /*--------- footer ---------*/
 #footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
+  background-color: #121212;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #fff;
 }

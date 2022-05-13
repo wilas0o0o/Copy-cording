@@ -4,12 +4,26 @@ $(function() {
   });
 
   $('.mask').on('click', function() {
-    ('#header').removeClass('open');
+    $('#header').removeClass('open');
+  });
+
+  $('.nav-item, .nav-item a').on('click', function() {
+    $('#header').removeClass('open');
+  });
+
+  $('a[href^="#"]').on('click', function() {
+    var href = $(this).attr('href');
+    var target = $(href == '#' || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $('html, body').animate({
+      scrollTop:position
+    }, 600, "swing"
+    );
+    return false;
   });
 
   $('.slick-area').slick({
     arrows: false,
-    autoplay: true,
     centerMode: true,
     centerPadding: '100px',
     slidesToShow: 3,
