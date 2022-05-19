@@ -23,6 +23,9 @@ html, body {
 nav ul {
   list-style: none;
 }
+li {
+  list-style: none;
+}
 img {
   max-width: 100%;
 }
@@ -133,6 +136,7 @@ sp-menu
   display: none;
   width: 100%;
   height: 100vh;
+  padding: 20% 30px;
 }
 .open .header__logo {
   pointer-events: none;
@@ -147,4 +151,30 @@ sp-menu
   left: 0;
   width: 100%;
   height: 100%;
+}
+.sp-heading {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #3c3c3c;
+}
+.sp-heading img {
+  width: 47%;
+}
+.sp-heading__list {
+  padding-top: 37px;
+}
+.sp-heading__item {
+  position: relative;
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0 30px;
+}
+.sp-heading__item:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: -27px;
+  width: 15px;
+  height: 15px;
+  background: url(../img/common/blank-gray.png) center no-repeat;
+  background-size: 15px;
 }
