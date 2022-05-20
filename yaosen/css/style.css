@@ -33,6 +33,9 @@ body {
   background-image: url(../img/common/bg-noise-wht.png);
   background-repeat: repeat;
 }
+main {
+  padding-top: 100px;
+}
 
 /*-----------------------------
 共通部分
@@ -235,4 +238,12 @@ sp-menu
 }
 .sp-footer__item:hover {
   opacity: 0.3;
+}
+
+/*-----------------------------
+footer
+-----------------------------*/
+#footer {
+  width: 100%;
+  text-align: center;
 }
