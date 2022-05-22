@@ -36,12 +36,6 @@ body {
 main {
   padding-top: 100px;
 }
-a {
-  transition: .3s;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
-}
 
 /*-----------------------------
 共通部分
@@ -64,27 +58,6 @@ a {
 }
 .aic {
   align-items: center;
-}
-.sp-heading .catch {
-  -webkit-mask: url(../img/brush.png);
-  mask: url(../img/brush.png);
-  -webkit-mask-size: 2500% 100%;
-  mask-size: 2500% 100%;
-  -webkit-mask-position: 0 0;
-  mask-position: 0 0;
-}
-.open .sp-heading .catch {
-  animation: brush01 1s 0.3s steps(22) forwards;
-}
-@keyframes brush01 {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
 }
 
 /*-----------------------------
@@ -203,7 +176,7 @@ sp-menu
 .sp-heading {
   padding-bottom: 30px;
 }
-.sp-heading h3 {
+.sp-heading img {
   width: 47%;
 }
 .sp-heading__list {
