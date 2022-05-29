@@ -10,7 +10,6 @@
 }
 .container:hover {
   background-color: #ee4335;
-  color: #000;
 }
 
 .animation-sample {
@@ -34,4 +33,14 @@
   100% {
     background-color: #ea4335;
   }
+}
+
+.animation-sample:nth-child(2) {
+  background-color: #f684d5;
+  transition: all 1s;
+  animation: none;
+}
+.animation-sample:nth-child(2):hover {
+  background-color: #8dd42c;
+  width: 300px;
 }
